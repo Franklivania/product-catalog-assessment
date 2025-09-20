@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+@layer base, theme, utilities, components;
+
+@font-face {
+  font-family: "OpenSans", sans-serif;
+  src: url("./assets/fonts/OpenSans.ttf");
+  font-style: normal;
+  font-weight: 100 200 300 400 500 600 700 800 900;
+}
+
+@font-face {
+  font-family: "OpenSans", sans-serif;
+  src: url("./assets/fonts/OpenSans-Italic.ttf");
+  font-style: italic;
+  font-weight: 100 200 300 400 500 600 700 800 900;
+}
+
+@font-face {
+  font-family: "Ribeye", serif;
+  src: url("./assets/fonts/Ribeye-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --font-open: "OpenSans", sans-serif;
+  --font-ribeye: "Ribeye", serif;
+}
+
+@theme {
+  --font-open: "OpenSans", sans-serif;
+  --font-ribeye: "Ribeye", serif;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 120em;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
