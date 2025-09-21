@@ -1,6 +1,20 @@
 @import 'tailwindcss';
 @layer base, theme, utilities, components;
 
+/* 
+  Add custom xs device size for Tailwind.
+  This is a CSS variable for reference, but the actual breakpoint must be set in tailwind.config.js:
+  theme: {
+    screens: {
+      xs: '400px',
+      // ...other breakpoints
+    }
+  }
+*/
+:root {
+  --breakpoint-xs: 400px;
+}
+
 @font-face {
   font-family: "OpenSans", sans-serif;
   src: url("./assets/fonts/OpenSans.ttf");
@@ -53,6 +67,15 @@ body {
     border: 0;
   }
 
+  /* Example: xs: utility for demonstration (actual breakpoint handled in tailwind.config.js) */
+  @media (min-width: 400px) {
+    .xs\:block {
+      display: block;
+    }
+    .xs\:hidden {
+      display: none;
+    }
+  }
 }
 
 button {
@@ -64,4 +87,8 @@ button {
   &:hover {
     @apply scale-95 bg-slate-300;
   }
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #c026d3;
 }
