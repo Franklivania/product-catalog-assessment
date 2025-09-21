@@ -1,9 +1,33 @@
 import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const typographyVariants = cva("font-poppins", {
+const Slot = React.forwardRef(({ children, ...props }, ref) => {
+  if (React.isValidElement(children)) {
+    return React.cloneElement(children, {
+      ...props,
+      ...children.props,
+      ref: ref ? (node) => {
+        if (typeof ref === 'function') {
+          ref(node);
+        } else if (ref) {
+          ref.current = node;
+        }
+        if (children.ref) {
+          if (typeof children.ref === 'function') {
+            children.ref(node);
+          } else if (children.ref) {
+            children.ref.current = node;
+          }
+        }
+      } : children.ref,
+    });
+  }
+  return children;
+});
+Slot.displayName = "Slot";
+
+const typographyVariants = cva("font-open", {
   variants: {
     variant: {
       h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",

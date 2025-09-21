@@ -1,6 +1,6 @@
 # Typography Components
 
-A comprehensive set of typography components built with Tailwind CSS and class-variance-authority, following shadcn/ui patterns. These components are optimized for accessibility, screen readers, and responsive design.
+A comprehensive set of typography components built with Tailwind CSS and class-variance-authority. These components are optimized for accessibility, screen readers, and responsive design.
 
 ## Components
 
@@ -104,7 +104,7 @@ All components accept these common props:
 | Prop         | Type      | Default | Description                              |
 | ------------ | --------- | ------- | ---------------------------------------- |
 | `className`  | `string`  | -       | Additional CSS classes                   |
-| `asChild`    | `boolean` | `false` | Render as child element using Radix Slot |
+| `asChild`    | `boolean` | `false` | Render as child element using custom Slot |
 | `responsive` | `boolean` | `false` | Enable responsive font sizing            |
 
 ### Typography Props
