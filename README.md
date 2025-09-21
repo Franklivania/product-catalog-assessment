@@ -1,4 +1,6 @@
-<img width="1890" height="1175" alt="image" src="https://github.com/user-attachments/assets/cd92d0d7-f8b6-473c-97b9-bf23bddb7699" /># Product Catalog Assessment
+<img width="1890" height="1175" alt="image" src="https://github.com/user-attachments/assets/cd92d0d7-f8b6-473c-97b9-bf23bddb7699" />
+
+# Product Catalog Assessment
 
 A modern, responsive e-commerce product catalog built with React and Vite. This application demonstrates advanced frontend development practices including state management, search functionality, filtering, sorting, and comprehensive UI components.
 [Live Link](https://subtle-elf-d055ea.netlify.app/)
