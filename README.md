@@ -1,4 +1,4 @@
-# Product Catalog Assessment
+<img width="1890" height="1175" alt="image" src="https://github.com/user-attachments/assets/cd92d0d7-f8b6-473c-97b9-bf23bddb7699" /># Product Catalog Assessment
 
 A modern, responsive e-commerce product catalog built with React and Vite. This application demonstrates advanced frontend development practices including state management, search functionality, filtering, sorting, and comprehensive UI components.
 [Live Link](https://subtle-elf-d055ea.netlify.app/)
@@ -144,17 +144,35 @@ This project includes comprehensive documentation for various components and sys
 
 ## 📸 Screenshots
 
-*Screenshots will be added here showing:*
 - Main product catalog view
+  <img width="1890" height="1175" alt="image" src="https://github.com/user-attachments/assets/77e4a109-784c-481a-9ee6-85cfcd665d23" />
+
 - Search functionality
+  <img width="1522" height="609" alt="image" src="https://github.com/user-attachments/assets/45eec2fa-21b0-4c17-9305-7d09c2d8bfba" />
+
 - Filter and sort options
+  <img width="1522" height="609" alt="image" src="https://github.com/user-attachments/assets/8fbdd778-9e70-4cfd-a15f-179b0d83b30b" />
+  <img width="1465" height="1094" alt="image" src="https://github.com/user-attachments/assets/ca793ee8-86d8-4cc5-b9b5-bc42e3fea540" />
+
+
 - Shopping cart interface
+  <img width="1888" height="1120" alt="image" src="https://github.com/user-attachments/assets/118a8524-7978-488c-8f38-d1a53de675e0" />
+
+- Wishlist Interface
+  <img width="1712" height="1137" alt="image" src="https://github.com/user-attachments/assets/976e4858-acbe-461d-9837-415cf9704773" />
+
+
 - Mobile responsive design
+  <img width="405" height="876" alt="image" src="https://github.com/user-attachments/assets/e16ca228-e959-4888-9d77-d2cd846fa3bb" />
+
 - Loading states with skeleton components
+  <img width="1414" height="1015" alt="image" src="https://github.com/user-attachments/assets/1fd2cf2f-6f2f-49c1-ba0e-9d5c18f09340" />
+
 
 ## ⏱️ Time Spent
 
 **Total Development Time**: 18 hrs (6hrs 34mins, coding - Wakatime certified)
+<img width="1619" height="656" alt="image" src="https://github.com/user-attachments/assets/22264c84-e0f9-435e-9508-d4433707f2ad" />
 
 
 ## 🚀 Available Scripts
