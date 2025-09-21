@@ -23,7 +23,7 @@ export default function Navbar() {
       </span>
 
       <aside className="space-x-4">
-        <button
+        {/* <button
           type="button"
           title="User profile"
           aria-label="User profile"
@@ -31,7 +31,7 @@ export default function Navbar() {
           className="hover-btn"
         >
           <Icon icon="solar:user-circle-broken" width={20} height={20} />
-        </button>
+        </button> */}
         <button
           type="button"
           title="Wishlist"

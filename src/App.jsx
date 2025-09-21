@@ -13,7 +13,7 @@ import { useState } from "react";
 
 export default function App() {
   const { data, isLoading, error } = useSWR("https://api.escuelajs.co/api/v1/products", fetcher);
-  
+
   // State for filter and sort dropdowns
   const [openFilter, setOpenFilter] = useState(false);
   const [openSort, setOpenSort] = useState(false);
@@ -114,14 +114,13 @@ export default function App() {
           {/* Filter Button with Dropdown */}
           <div>
             <Typography.p asChild responsive="true">
-              <button 
-                type="button" 
+              <button
+                type="button"
                 onClick={handleFilterToggle}
-                className={`flex items-center gap-2 px-4 py-2 border rounded-sm transition-colors ${
-                  hasActiveFilters 
-                    ? "border-fuchsia-300 bg-fuchsia-50 text-fuchsia-700" 
-                    : "border-slate-300 hover:border-slate-400"
-                }`}
+                className={`flex items-center gap-2 px-4 py-2 border rounded-sm transition-colors ${hasActiveFilters
+                  ? "border-fuchsia-300 bg-fuchsia-50 text-fuchsia-700"
+                  : "border-slate-300 hover:border-slate-400"
+                  }`}
               >
                 <Icon icon="mynaui:filter" width={24} height={24} />
                 Filter
@@ -150,14 +149,13 @@ export default function App() {
           {/* Sort Button with Dropdown */}
           <div>
             <Typography.p asChild responsive="true">
-              <button 
-                type="button" 
+              <button
+                type="button"
                 onClick={handleSortToggle}
-                className={`flex items-center gap-2 px-4 py-2 border rounded-sm transition-colors ${
-                  sortOption 
-                    ? "border-fuchsia-300 bg-fuchsia-50 text-fuchsia-700" 
-                    : "border-slate-300 hover:border-slate-400"
-                }`}
+                className={`flex items-center gap-2 px-4 py-2 border rounded-sm transition-colors ${sortOption
+                  ? "border-fuchsia-300 bg-fuchsia-50 text-fuchsia-700"
+                  : "border-slate-300 hover:border-slate-400"
+                  }`}
               >
                 <Icon icon="basil:sort-solid" width={24} height={24} />
                 Sort
@@ -176,19 +174,18 @@ export default function App() {
         </aside>
       </section>
 
+      {isLoading && (
+        <SkeletonGrid
+          count={8}
+          SkeletonComponent={ProductCardSkeleton}
+        />
+      )}
+
       <section
         aria-label="Products Section"
         aria-labelledby="Products Section"
         className="relative w-full max-w-7xl mx-auto mb-12 md:px-4 2xl:px-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-content-center place-items-center md:place-items-start gap-4"
       >
-        {isLoading && (
-          <SkeletonGrid
-            count={8}
-            SkeletonComponent={ProductCardSkeleton}
-            className="col-span-full"
-          />
-        )}
-
         {error && (
           <div className="col-span-full text-center py-8">
             <p className="text-red-500">Error loading products: {error.message}</p>
@@ -202,6 +199,8 @@ export default function App() {
           />
         ))}
       </section>
+
+
     </main>
   )
 }
